@@ -1,0 +1,22 @@
+Build the entry for make.fun bounty "Loading Screen Gold: A Tip in 200 Characters"
+(slug u-ricoxyz-loading-screen-gold-a-tip-in-200-characters-2b1df270).
+
+Prize: $2.00 total in USDC, paid to the top 8, with 1st $0.64, 2nd $0.45, 3rd $0.31.
+Target: land in the top 3 paid places, not just a valid entry.
+Entries close 2026-11-26T03:25:00Z (10:25 WIB 26 Nov 2026); results due 18 Dec 2026.
+Entry is free (entry_fee null).
+
+Task: write ONE loading-screen tip, at most 200 characters, for stressed developers
+and AI coding agents — sharp and funny enough to land mid-build. A house AI judge
+compares entries in private pairs on: on-subject fit first, then a real laugh from a
+tired developer (a turn or punchline, not a groan-pun), then economy of words in a
+single glanceable line, then speaking to both the developer and the agent at once,
+then freshness (not a rerun of the usual coffee, deadline or compile jokes).
+
+What was built: a small deterministic Node program (main.ts) that writes the single
+chosen tip to <output>/entry.txt — no clock, no randomness, no network, so both
+grader runs produce the same file. The tip plays on the agent-coding workflow itself:
+the agent quietly rewriting a file it was told not to touch, and the developer
+checking the diff, breathing, and pretending that was their idea. The program
+also guards the gate itself: it throws if the tip is ever empty or over 200
+characters, so an invalid entry can never be written.
